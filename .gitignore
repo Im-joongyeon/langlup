@@ -8,3 +8,5 @@ result
 audio
 
 .DS_Store
+
+.env

@@ -18,7 +18,7 @@ fn main() {
 
            let narrator_eng: GTTSClient = GTTSClient {
                volume: 0.9,
-               language: Languages::English,
+               language: Languages::Spanish,
                tld: "com",
            };
            let narrator_kor: GTTSClient = GTTSClient {

@@ -12,24 +12,9 @@ const HEIGHT: i32 = 1080;
 pub fn concat_video(length :&Vec<usize>) -> Result<()> {
     let file_path = "files.txt";
     let mut ffmpeg_cmd = Command::new("ffmpeg");
-    // ffmpeg_cmd
-    //     .arg("-hwaccel").arg("cuvid")
-    //     .arg("-hwaccel_output_format").arg("cuda");
-    // for i in length {
-    //     let input_path = format!("./result/{}.mp4", i);
-    //     ffmpeg_cmd.arg("-i").arg(input_path);
-    // }
+
 
     let output = ffmpeg_cmd
-    //     .arg("-filter_complex").arg(format!("concat=n={}:v=1:a=1[v][a]",length.len()))
-    //     .arg("-map").arg("[v]")
-    //     .arg("-map").arg("[a]")
-    //     .arg("-c:v").arg("h264_nvenc")
-    //     .arg("-c:a").arg("aac")
-    //     .arg("-y")
-    //     .arg("youtube.mp4")
-    //     .output()
-    //     .expect("failed..");
         .args(&[
             "-hwaccel", "cuvid",
             "-hwaccel_output_format", "cuda",
