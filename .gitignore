@@ -1,10 +1,12 @@
 
 target
+!/screen/
+/screen/*
 
-screen
+!/result/
+/result/*
 
-result
-
-audio
+!/audio/
+/audio/*
 
 .DS_Store

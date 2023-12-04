@@ -1,0 +1,13 @@
+#! /bin/bash
+
+echo $PWD
+
+cd /home/johnny/langlup
+
+sudo rm -rf ./audio/*.mp3
+
+sudo rm -rf ./result/*.mp4
+
+sudo rm -rf ./screen/*.jpg
+
+sudo rm -f ./files.txt
