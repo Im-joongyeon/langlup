@@ -1,8 +1,8 @@
 #! /bin/bash
 
-echo $PWD
+target_dir="$HOME/langlup"
 
-cd /home/johnny/langlup
+cd "$target_dir"
 
 sudo rm -rf ./audio/*.mp3
 
